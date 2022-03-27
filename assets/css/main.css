@@ -11,7 +11,8 @@
   --brown: #382923;
   --primaryYellow: #e3b505;
   --secondaryYellow: rgb(242, 180, 80);
-  --darkBrown:#BB9457;
+  --darkBrown: #bb9457;
+  --grey: #A9B2AC;
 }
 
 body {
@@ -82,7 +83,7 @@ body {
 }
 
 @keyframes bars {
-  0%{
+  0% {
     transform: scale(1);
   }
 
@@ -97,124 +98,162 @@ body {
 /* end of header section */
 
 /* about section */
-  #about {
-    width: 90vw;
-    margin: 0 auto;
-    padding: 5rem 0;
-  }
+#about {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
 
-  .about_title {
-    font-size: 3rem;
-    margin-top: 2rem;
-    font-family: 'La Belle Aurore', cursive;
-  }
+.about_title {
+  font-size: 3rem;
+  margin-top: 2rem;
+  font-family: 'La Belle Aurore', cursive;
+}
 
-  .about_img img {
-    width: 100%;
-    display: block;
-  }
+.about_img img {
+  width: 100%;
+  display: block;
+}
 
-  .about_text {
-    letter-spacing: 0.1rem;
-    line-height: 1.5;
-    margin-top: 1rem;
-    color: var(--main-black);
-    margin-bottom: 3rem;
-  }
+.about_text {
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  color: var(--main-black);
+  margin-bottom: 3rem;
+}
 
-  .underline {
-    width: 80px;
-    height: 4px;
-    background-color: var(--secondaryYellow);
-  }
+.underline {
+  width: 80px;
+  height: 4px;
+  background-color: var(--secondaryYellow);
+}
 /* end of about section */
 
 /* drink section */
-  #drink {
-    background-color: var(--brown);
-    color: var(--primaryYellow);
-    padding: 4rem 0;
-  }
+#drink {
+  background-color: var(--brown);
+  color: var(--primaryYellow);
+  padding: 4rem 0;
+}
 
-  .drink_form {
-    width: 70%;
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-  }
+.drink_form {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
 
-  .drink_form_title {
-    font-family: 'La Belle Aurore', cursive;
-    font-size: 3rem;
-  }
+.drink_form_title {
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 3rem;
+}
 
-  .drink_form input, 
-   button {
-    width: 100%;
-    border-radius: 3px;
-    background-color: rgba(111,87,77,0.6);
-    border: none;
-    color: var(--darkBrown);
-    outline: none;
-    padding: 0.32rem 0.5rem;
-    border-radius: 0.5rem;
-  }
+.drink_form input,
+button {
+  width: 100%;
+  border-radius: 3px;
+  background-color: rgba(111, 87, 77, 0.6);
+  border: none;
+  color: var(--darkBrown);
+  outline: none;
+  padding: 0.32rem 0.5rem;
+  border-radius: 0.5rem;
+}
 
-  ::placeholder { 
-    color: var(--darkBrown);
-    opacity: 1; 
-    font-size: 1rem;
-    text-transform: capitalize;
-  }
-  
-  .drink_form button {
-    background-color: var(--secondaryYellow);
-    color: var(--main-black);
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.5s linear;
-  }
+::placeholder {
+  color: var(--darkBrown);
+  opacity: 1;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
 
-  .drink_form button:hover {
-    background-color: var(--primaryYellow);
-  }
-  /* work section */
-  #work {
-    width: 90vw;
-    margin: 0 auto;
-    text-align: center;
-  }
+.drink_form button {
+  background-color: var(--secondaryYellow);
+  color: var(--main-black);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
 
-  #work .underline {
-    margin: 0 auto;
-  }
-
-  .work_container {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0;
-    margin-top: 15px;
-    width: 100%;
-  }
-
-  .work_item {
-    position: relative;
-    background: linear-gradient(var(--primaryYellow),var(--primaryYellow));
-    overflow: hidden;
-  }
-
-  #work img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    transition: all linear 1s;
-  }
-
-  #work img:hover {
-    opacity: 0.5;
-    transform: scale(1.2);
-  }
-  /* end of work section */
+.drink_form button:hover {
+  background-color: var(--primaryYellow);
+}
 /* end of drink section */
+
+/* work section */
+#work {
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#work .underline {
+  margin: 0 auto;
+}
+
+.work_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.work_item {
+  position: relative;
+  background: linear-gradient(var(--primaryYellow), var(--primaryYellow));
+  overflow: hidden;
+}
+
+#work img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: all linear 1s;
+}
+
+#work img:hover {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+/* end of work section */
+
+#about {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.about_header {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.about_container {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.about_info {
+  margin-top: 4rem;
+  padding-left: 4rem;
+}
+.contact_title {
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+  letter-spacing: 0.25rem;
+  font-style: italic;
+}
+
+.contact_info_icon {
+  font-size: 3.5rem;
+  color: var(--primaryYellow);
+}
+
+.list_icons {
+  list-style-type: none;
+  margin-right: 10px;
+  color: var(--grey);
+}

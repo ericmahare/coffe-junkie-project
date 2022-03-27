@@ -8,8 +8,10 @@
 
 :root {
   --main-black: #111;
+  --brown: #382923;
   --primaryYellow: #e3b505;
-  --secondaryYellow: rgb(242, 180, 80)
+  --secondaryYellow: rgb(242, 180, 80);
+  --darkBrown:#BB9457;
 }
 
 body {
@@ -34,6 +36,7 @@ body {
   background-image: url('../img/headerBcg.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 }
 
@@ -124,3 +127,93 @@ body {
     background-color: var(--secondaryYellow);
   }
 /* end of about section */
+
+/* drink section */
+  #drink {
+    background-color: var(--brown);
+    color: var(--primaryYellow);
+    padding: 4rem 0;
+  }
+
+  .drink_form {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .drink_form_title {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 3rem;
+  }
+
+  .drink_form input, 
+   button {
+    width: 100%;
+    border-radius: 3px;
+    background-color: rgba(111,87,77,0.6);
+    border: none;
+    color: var(--darkBrown);
+    outline: none;
+    padding: 0.32rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+  ::placeholder { 
+    color: var(--darkBrown);
+    opacity: 1; 
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+  
+  .drink_form button {
+    background-color: var(--secondaryYellow);
+    color: var(--main-black);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s linear;
+  }
+
+  .drink_form button:hover {
+    background-color: var(--primaryYellow);
+  }
+  /* work section */
+  #work {
+    width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #work .underline {
+    margin: 0 auto;
+  }
+
+  .work_container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .work_item {
+    position: relative;
+    background: linear-gradient(var(--primaryYellow),var(--primaryYellow));
+    overflow: hidden;
+  }
+
+  #work img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all linear 1s;
+  }
+
+  #work img:hover {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  /* end of work section */
+/* end of drink section */

@@ -78,6 +78,7 @@ body {
   animation-name: bars;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  z-index: 1;
 }
 
 @keyframes bars {
